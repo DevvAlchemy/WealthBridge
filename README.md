@@ -64,7 +64,7 @@ WealthBridge is developed using the following tools and technologies:
 - **Analytics**: Integration with real-time market data providers and custom data visualization using Recharts.
 - **Artificial Intelligence**: Machine learning models for investment recommendations and fraud detection.(If time allows)
 
-##UI/UX
+## UI/UX
 https://xd.adobe.com/view/4972d01b-e563-4fdc-9f7d-3ada75e615dc-1c21/?fullscreen&hints=off (Not final draft)
 
 ## Proposition
