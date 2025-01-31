@@ -1,5 +1,5 @@
 //
-//  DiscoveryView.swift
+//  SubscriptionView.swift
 //  WealthBridge
 //
 //  Created by Royal K on 2025-01-31.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct DiscoveryView: View {
+struct SubscriptionView: View {
     var body: some View {
-        Text("Discovery")
+        Text("Subscription Services")
     }
 }
 
 #Preview {
-    DiscoveryView()
+    SubscriptionView()
 }

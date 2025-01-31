@@ -1,5 +1,5 @@
 //
-//  DiscoveryView.swift
+//  Account.swift
 //  WealthBridge
 //
 //  Created by Royal K on 2025-01-31.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct DiscoveryView: View {
+struct Account: View {
     var body: some View {
-        Text("Discovery")
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    DiscoveryView()
+    Account()
 }

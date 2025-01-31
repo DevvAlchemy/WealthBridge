@@ -1,5 +1,5 @@
 //
-//  DiscoveryView.swift
+//  ErrorView.swift
 //  WealthBridge
 //
 //  Created by Royal K on 2025-01-31.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct DiscoveryView: View {
+struct ErrorView: View {
     var body: some View {
-        Text("Discovery")
+        Text("UNable to complete request")
     }
 }
 
 #Preview {
-    DiscoveryView()
+    ErrorView()
 }
