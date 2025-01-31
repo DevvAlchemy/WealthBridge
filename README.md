@@ -1,4 +1,4 @@
-# WealthBridge: Connecting Banking and Investing
+# 🏦 WealthBridge: Connecting Banking and Investing
 
 ## Introduction
 WealthBridge is a comprehensive financial management platform that seamlessly integrates traditional banking capabilities with investment opportunities. Designed for young professionals and emerging investors, the app aims to bridge the gap between everyday finances and wealth-building strategies.
@@ -67,5 +67,5 @@ WealthBridge is developed using the following tools and technologies:
 ## UI/UX
 https://xd.adobe.com/view/4972d01b-e563-4fdc-9f7d-3ada75e615dc-1c21/?fullscreen&hints=off (Not final draft)
 
-## Proposition
+## 📜 Proposition
 WealthBridge offers a comprehensive solution for modern financial management, empowering users to take control of their finances and grow their wealth. By integrating essential banking features with innovative investment tools and personalized insights, the app provides a holistic approach to achieving financial success. With its emphasis on security, convenience, and customization, WealthBridge aims to become the go-to platform for individuals seeking to bridge the gap between their day-to-day finances and long-term wealth-building strategies.
