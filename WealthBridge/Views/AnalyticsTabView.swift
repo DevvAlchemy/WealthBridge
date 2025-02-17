@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AnalyticTabView: View {
+struct AnalyticsTabView: View {
     var body: some View {
         Text("My Stats")
     }
