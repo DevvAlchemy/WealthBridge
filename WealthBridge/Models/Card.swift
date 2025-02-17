@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct Card: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct Card: Identifiable {
+    let id = UUID()
+    let type: String  //Business or Premium card
+    let balance: Double
+    let cardNumber: String
+    let holderName: String
+    let expiryDate: String
+    let color: Color
+
 }
 
-#Preview {
-    Card()
-}
+

@@ -36,7 +36,7 @@ struct VerificationView: View {
                            OTPTextField(text: $viewModel.otpFields[index],
                                       focused: focusedField == index)
                                .focused($focusedField, equals: index)
-                               .onChange(of: viewModel.otpFields[index]) { newValue in
+                               .onChange(of:viewModel.otpFields[index]) { newValue in
                                    if newValue.count == 1 && index < 5 {
                                        focusedField = index + 1
                                    }

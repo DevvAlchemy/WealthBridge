@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct WatchlistItem: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct WatchlistItem: Identifiable {
+    let id = UUID()
+    let symbol: String
+    let name: String
+    let price:  Double
+    let percentageChange: Double
+    let type: AssetType
 
-#Preview {
-    WatchlistItem()
+    enum AssetType {
+        case stock
+        case crypto
+    }
 }

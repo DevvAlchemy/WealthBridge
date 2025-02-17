@@ -7,12 +7,10 @@
 
 import SwiftUI
 
-struct Contact: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Contact()
+struct Contact: Identifiable {
+    let id: Int
+    let name: String
+    let image: String
+//    let email: String
+//    let phone:  Double
 }

@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct AnalyticsTabView: View {
+struct AnalyticsView: View {
     var body: some View {
         Text("My Stats")
     }
 }
 
 #Preview {
-    AnalyticTabView()
+    AnalyticsView()
 }

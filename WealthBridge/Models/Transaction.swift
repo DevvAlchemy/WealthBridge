@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct Transaction: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct Transaction: Identifiable {
+    let id: Int
+    let title: String
+    let date: String
+    let amount: Double
+    let type: TransactionType
 
-#Preview {
-    Transaction()
+    enum TransactionType {
+        case debit
+        case credit
+    }
 }
