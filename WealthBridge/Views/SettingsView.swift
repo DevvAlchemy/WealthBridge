@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct SettingView: View {
+struct SettingsView: View {
     var body: some View {
         Text("Settings")
+            .font(.headline)
     }
 }
 
 #Preview {
-    SettingView()
+    SettingsView()
 }

@@ -28,14 +28,14 @@ struct MainTabView: View {
                 .tag(1)
 
             // Transfer Tab
-            TransferView()
-                .tabItem {
-                    Image(systemName: selectedTab == 2 ? "dollarsign.circle.fill" : "dollarsign.circle")
-                    Text("Transfer")
-                }
-                .tag(2)
+//            TransferView()
+//                .tabItem {
+//                    Image(systemName: selectedTab == 2 ? "dollarsign.circle.fill" : "dollarsign.circle")
+//                    Text("Transfer")
+//                }
+//                .tag(2)
 
-            // Team/Organization Tab
+            // Discovery Tab
             DiscoveryView()
                 .tabItem {
                     Image(systemName: selectedTab == 3 ? "square.grid.2x2.fill" : "square.grid.2x2.fill")
@@ -46,44 +46,14 @@ struct MainTabView: View {
             // Settings Tab
             SettingsView()
                 .tabItem {
-                    Image(systemName: selectedTab == 4 ? "gearshape.fill" : "gearshape")
+                    Image(
+                        systemName: selectedTab == 4 ? "gearshape.fill" : "gearshape"
+                    )
                     Text("Settings")
                 }
                 .tag(4)
         }
         .accentColor(.orange)//active tab colour
-    }
-}
-
-// placeholder views for now
-/*
-struct HomeView: View {
-    var body: some View {
-        Text("Home View")
-    }
-}
-
-struct AnalyticsView: View {
-    var body: some View {
-        Text("Analytics View")
-    }
-}
-
-//struct TransferView: View {
-  //  var body: some View {
-    //    Text("Transfer View")
-//    }
-//}
-
-struct DiscoveryView: View {
-    var body: some View {
-        Text("Team View")
-    }
-}
-*/
-struct SettingsView: View {
-    var body: some View {
-        Text("Settings View")
     }
 }
 

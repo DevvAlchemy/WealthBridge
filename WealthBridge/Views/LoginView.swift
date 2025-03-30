@@ -16,7 +16,7 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                // Background color
+                // Background color. will change to sytem when important features are done
                 Color("BackgroundColor") //  will define this in assets
                     .ignoresSafeArea()
 

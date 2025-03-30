@@ -16,17 +16,17 @@ struct HomeView: View {
     // Sample data - In a real app, this would come from a data service
     @State private var cards: [Card] = [
         Card(type: "Business",
-             balance: 487775.87,
+             balance: 487_775.87, //figure spacing solution next time i read this
              cardNumber: "**** **** **** 6598",
              holderName: "Stacy Kalala",
              expiryDate: "03/2030",
-             color: .orange
+             color: .purple
             )
     ]
 
     @State private var watchlist: [WatchlistItem] = [
         WatchlistItem(symbol: "AAPL", name: "Apple Inc.", price: 178.72, percentageChange: 2.45, type: .stock),
-        WatchlistItem(symbol: "BTC", name: "Bitcoin", price: 51240.30, percentageChange: -1.20, type: .crypto),
+        WatchlistItem(symbol: "BTC", name: "Bitcoin", price: 51_240.30, percentageChange: -1.20, type: .crypto),
         WatchlistItem(symbol: "TSLA", name: "Tesla", price: 209.45, percentageChange: 3.75, type: .stock)
     ]
 
@@ -34,8 +34,8 @@ struct HomeView: View {
         Contact(id: 1, name: "John", image: "person1"),
         Contact(id: 2, name: "Sarah", image: "person2"),
         Contact(id: 3, name: "Mike", image: "person3"),
-        Contact(id: 4, name: "Emma", image: "person4"),
-        Contact(id: 5, name: "David", image: "person5")
+        Contact(id: 4, name: "Eliyanah", image: "person4"),
+        Contact(id: 5, name: "Huey", image: "person5")
     ]
 
     @State private var recentTransactions: [Transaction] = [
@@ -62,7 +62,7 @@ struct HomeView: View {
                             cardsSection
                             watchlistSection
                             sendRequestSection(contacts: recentContacts) //passed array as parimeter here because Swiftui won't allow to pass @states within same view
-                            activitySection(transactions: recentTransactions)////passed array as parimeter here because Swiftui won't allow to pass @states within same view
+                            activitySection(transactions: recentTransactions)//passed array as parimeter here because Swiftui won't allow to pass @states within same view
                             // Future sections will go here
                         }
                         .padding(.horizontal)
@@ -88,6 +88,7 @@ struct HomeView: View {
                     Text("Stacy")
                         .font(.title2)
                         .fontWeight(.bold)
+                        .ignoresSafeArea(.all) // Add safe area to all space later. 
                 }
             }
 
@@ -103,7 +104,7 @@ struct HomeView: View {
                         Circle()
                             .fill(Color.red)
                             .frame(width: 8, height: 8)
-                            .offset(x: 8, y: -8),
+                            .offset(x: 0, y: -5),
                         alignment: .topTrailing
                     )
             }
@@ -137,7 +138,7 @@ struct HomeView: View {
 
     //Watchlist section view on screen
     private var watchlistSection: some View {
-        VStack(alignment: .leading, spacing: 15) {
+        VStack(alignment: .leading, spacing: 5) {
             HStack {
                 Text("Watchlist")
                     .font(.title2)
@@ -160,13 +161,13 @@ struct HomeView: View {
 
 //Send or Request Transfer section
 private func sendRequestSection(contacts: [Contact]) -> some View {
-    VStack(alignment: .leading, spacing: 15) {
+    VStack(alignment: .leading, spacing: 10) {
         Text("Send / Request Money")
             .font(.title2)
             .fontWeight(.bold)
 
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 20) {
+            HStack(spacing:15) {
                 Button(action: { /*Will  add contact action when i fix design */ }) {
                     VStack {
                         Circle()
@@ -195,7 +196,7 @@ private func sendRequestSection(contacts: [Contact]) -> some View {
 }
 
 private func activitySection(transactions: [Transaction]) -> some View {
-    VStack(alignment: .leading, spacing: 15) {
+    VStack(alignment: .leading, spacing: 5) {
         HStack {
             Text("Latest Activity")
                 .font(.title2)

@@ -18,7 +18,7 @@ struct TransactionRow: View {
                 .fill(transaction.amount >= 0 ? Color.green.opacity(0.2) : Color.red.opacity(0.2))
                 .frame(width: 40, height: 40)
                 .overlay(
-                    Image(systemName: transaction.amount >= 0 ? "arrow.down.left" : "arrow.up.right")
+                    Image(systemName: transaction.amount >= 0 ? "arrow.down.left" : "arrow.up.right") //Market  change up or down arrows
                         .foregroundColor(transaction.amount >= 0 ? .green : .red)
                 )
 
@@ -34,6 +34,7 @@ struct TransactionRow: View {
 
             Spacer()
 
+            //Displayig amount with color
             Text(formatAmount(transaction.amount))
                 .font(.system(size: 16, weight: .medium))
                 .foregroundColor(transaction.amount >= 0 ? .green : .red)
