@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// Views/NotificationsSettingsView.swift
 struct NotificationsSettingsView: View {
     @Binding var isEnabled: Bool
 
