@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State private var selectedTab = 0 //State to keep track of the current tab
+    @EnvironmentObject var authManager: AuthManager
+    @State private var selectedTab = 0
+    @State private var showSignOutAlert = false
+
     var body: some View {
         TabView(selection: $selectedTab) {
-            //different tabs begin
+            // Home Tab
             HomeView()
                 .tabItem{
                     Image(systemName: selectedTab == 0 ? "house.fill" : "house")
@@ -28,12 +31,12 @@ struct MainTabView: View {
                 .tag(1)
 
             // Transfer Tab
-//            TransferView()
-//                .tabItem {
-//                    Image(systemName: selectedTab == 2 ? "dollarsign.circle.fill" : "dollarsign.circle")
-//                    Text("Transfer")
-//                }
-//                .tag(2)
+            TransferView()
+                .tabItem {
+                    Image(systemName: selectedTab == 2 ? "dollarsign.circle.fill" : "dollarsign.circle")
+                    Text("Transfer")
+                }
+                .tag(2)
 
             // Discovery Tab
             DiscoveryView()

@@ -16,7 +16,7 @@ struct HomeView: View {
     // Sample data - In a real app, this would come from a data service
     @State private var cards: [Card] = [
         Card(type: "Business",
-             balance: 487_775.87, //figure spacing solution next time i read this
+             balance: 48775.87, //figure spacing solution next time i read this
              cardNumber: "**** **** **** 6598",
              holderName: "Stacy Kalala",
              expiryDate: "03/2030",

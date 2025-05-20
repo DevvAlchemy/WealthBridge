@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "dollarsign.bank.building.fill")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("WealthBridge")
-        }
-        .padding()
-    }
-}
+    @EnvironmentObject var authManager: AuthManager
 
-#Preview {
-    ContentView()
+    var body: some View {
+        ZStack {
+            // Show main app if authenticated or skipped
+            if authManager.isAuthenticated || authManager.isSkippedAuth {
+                MainTabView()
+            } else {
+                // Show authentication flow
+                AuthenticationView()
+            }
+        }
+    }
 }
